@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+}
+.section {
+
+}
+.section__wrapper {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    margin: 40px;
+}
+.section__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section__nav-ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+.section__nav-profile {
+    border: 2px solid #9c59bb;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.section__nav-profile-name {
+    font-weight: 400;
+    font-size: 30px;
+}
+.section__nav-profile-img {
+    border: solid 2px #9c59bb;
+    border-radius: 100%;
+    padding: 9px 8px 0px 8px;
+}
+
+.section__content {
+}
+.section__content-wrapper {
+    border: 3px solid #9c59bb;
+    border-radius: 5px;
+    max-width: 1840px;
+    height: 844px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 844px;
+    padding: 60px 0 60px 0;
+    overflow: scroll;
+}
+.section__content-info-weekDay {
+    margin: 0 0 0 131px;
+    font-weight: 700;
+    font-size: 64px;
+}
+@media (max-width: 1919px) {
+    .section__content-info-weekDay {
+        margin: 0;
+        text-align: center;
+    }
+}
+.section__content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 270px 0 270px;
+}
+.section__content-info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 280px;
+}
+.section__content-info-subject {
+    border-radius: 5px;
+    max-width: 649px;
+    width: 100%;
+    background: #9c51bf;
+    display: grid;
+    grid-template-areas: 'name name' 'time place';
+    padding: 30px 35px;
+    grid-row-gap: 20px;
+    justify-content: space-between;
+}
+.section__content-info-subject-name, .section__content-info-subject-time, .section__content-info-subject-place {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    height: fit-content;
+}
+.section__content-info-subject-name {
+    grid-area: name;
+}
+.section__content-info-subject-time {
+    grid-area: time;
+}
+.section__content-info-subject-place {
+    grid-area: place;
+}
+.section__content-info-teacher {
+    font-weight: 700;
+    font-size: 34px;
+    border-radius: 5px;
+    width: 301px;
+    height: 90px;
+    background: #9c51bf;
+    border: none;
+    cursor: pointer;
+}

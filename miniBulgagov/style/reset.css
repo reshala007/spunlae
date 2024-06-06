@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    background-color: black;
+}
+* {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-decoration: none;
+    color: white;
+};
+
+
+
+
+/*main page*/
+
+body {
+    background-color: black;
+}
+.section {
+
+}
+.section__wrapper {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    margin: 40px;
+}
+.section__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section__nav-ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+.section__nav-profile {
+    border: 2px solid #9c59bb;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.section__nav-profile-name {
+    font-weight: 400;
+    font-size: 30px;
+}
+.section__nav-profile-img {
+    border: solid 2px #9c59bb;
+    border-radius: 100%;
+    padding: 9px 8px 0px 8px;
+}
+
+.section__content {
+}
+.section__content-wrapper {
+    border: 3px solid #9c59bb;
+    border-radius: 5px;
+    max-width: 1840px;
+    height: 844px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 844px;
+    padding: 60px 0 60px 0;
+    overflow: scroll;
+}
+.section__content-info-weekDay {
+    margin: 0 0 0 131px;
+    font-weight: 700;
+    font-size: 64px;
+}
+@media (max-width: 1919px) {
+    .section__content-info-weekDay {
+        margin: 0;
+        text-align: center;
+    }
+}
+.section__content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 270px 0 270px;
+}
+.section__content-info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 280px;
+}
+.section__content-info-subject {
+    border-radius: 5px;
+    max-width: 649px;
+    width: 100%;
+    background: #9c51bf;
+    display: grid;
+    grid-template-areas: 'name name' 'time place';
+    padding: 30px 35px;
+    grid-row-gap: 20px;
+    justify-content: space-between;
+}
+.section__content-info-subject-name, .section__content-info-subject-time, .section__content-info-subject-place {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    height: fit-content;
+}
+.section__content-info-subject-name {
+    grid-area: name;
+}
+.section__content-info-subject-time {
+    grid-area: time;
+}
+.section__content-info-subject-place {
+    grid-area: place;
+}
+.section__content-info-teacher {
+    font-weight: 700;
+    font-size: 34px;
+    border-radius: 5px;
+    width: 301px;
+    height: 90px;
+    background: #9c51bf;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/*task page*/
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+}
+.section__task-name {
+    width: 227px;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0 0 40px;
+}
+.section__task-topics {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section__task-topic {
+    padding: 5px 0;
+    font-weight: 400;
+    font-size: 35px;
+    background: #9e2ed3;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/*task list page*/
+
+
+.section {
+    padding: 60px 0 0 0;
+    display: flex;
+    gap: 33px;
+    align-items: center;
+    flex-direction: column;
+}
+.section__task {
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 25px 0;
+    background: #a226cd;
+}
+
+
+/*techer info*/
+
+.section {
+    display: flex;
+    padding: 212px 357px;
+    gap: 86px;
+    flex-direction: column;
+    align-items: center;
+}
+.section__img {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 100%;
+    border: #6e1caf 5px solid;
+}
+.section__img > img {
+    width: 100%;
+    height: 100%;
+}
+.section__name {
+    font-weight: 700;
+    font-size: 69px;
+}
